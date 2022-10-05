@@ -2,12 +2,14 @@
 
 # Compiled output
 /dist
+/eslint/dist
 /tmp
 /out-tsc
 /bazel-out
 
 # Node
 /node_modules
+/eslint/node_modules
 npm-debug.log
 yarn-error.log
 
@@ -40,3 +42,7 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Jest_report
+/jest-report
+
