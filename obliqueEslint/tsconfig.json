@@ -15,9 +15,6 @@
 			"node"
 		]
 	},
-	"include": [
-		"src/rules/**/*"
-	],
 	"exclude": [
 		"node_modules",
 		"tests"

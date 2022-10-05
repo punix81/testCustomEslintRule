@@ -55,6 +55,7 @@ overrides:
       - plugin:@typescript-eslint/eslint-plugin/all
       - plugin:@angular-eslint/all
       - plugin:@angular-eslint/template/process-inline-templates
+      - plugin:@oblique
       - prettier # this turns off all rules from eslint, @typescript-eslint and @angular-eslint that conflicts with prettier
     rules:
       # deactivate unwanted rules
@@ -79,6 +80,7 @@ overrides:
       "@typescript-eslint/prefer-readonly-parameter-types": off # forces "readonly" on functions where it is not allowed
       "@typescript-eslint/promise-function-async": off # no compatible with Angular's lazy loading
       "@typescript-eslint/sort-type-union-intersection-members": off
+      "@oblique/sort-import": 'error'
       accessor-pairs: off
       capitalized-comments: off
       class-methods-use-this: off #ideally, this rule should be limited to private methods
