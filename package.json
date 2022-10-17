@@ -36,6 +36,7 @@
     "@angular/cli": "~14.2.4",
     "@angular/compiler-cli": "^14.2.0",
     "@Oblique/eslint-plugin": "file:packages/eslint",
+    "@oblique/sort-import": "file:packages/obliqueEslint",
     "@types/jest": "^29.1.1",
     "@typescript-eslint/eslint-plugin": "5.37.0",
     "@typescript-eslint/parser": "5.37.0",
