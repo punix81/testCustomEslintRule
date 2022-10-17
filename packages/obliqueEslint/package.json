@@ -1,0 +1,27 @@
+{
+  "name": "@oblique/sort-import",
+	"version": "1.0.0",
+  "description": "eslint plugin for imports sort by their type",
+	"main": "src/index.ts",
+	"scripts": {
+		"test": "jest",
+		"build": "tsc && cp src/index.ts dist/ && cp package.json dist/"
+	},
+	"dependencies": {
+    "@types/jest": "^29.1.1",
+		"@typescript-eslint/parser": "^5.1.0",
+		"@typescript-eslint/experimental-utils": "^5.1.0",
+		"@typescript-eslint/eslint-plugin": "^5.1.0",
+    "eslint": "^8.23.1",
+    "jest": "^28.1.3",
+		"requireindex": "^1.2.0",
+    "typescript": "~4.7.2",
+    "ts-node": "~10.4.0"
+  },
+	"keywords": [
+		"eslint",
+		"eslintplugin",
+		"eslint-plugin"
+	],
+	"author": "Paulo Lopes"
+}

@@ -50,12 +50,13 @@ overrides:
       project:
         - tsconfig.json
       createDefaultProgram: true
+    plugins:
+      - "@Oblique"
     extends:
       - eslint:all
       - plugin:@typescript-eslint/eslint-plugin/all
       - plugin:@angular-eslint/all
       - plugin:@angular-eslint/template/process-inline-templates
-      - plugin:@oblique
       - prettier # this turns off all rules from eslint, @typescript-eslint and @angular-eslint that conflicts with prettier
     rules:
       # deactivate unwanted rules
@@ -80,7 +81,6 @@ overrides:
       "@typescript-eslint/prefer-readonly-parameter-types": off # forces "readonly" on functions where it is not allowed
       "@typescript-eslint/promise-function-async": off # no compatible with Angular's lazy loading
       "@typescript-eslint/sort-type-union-intersection-members": off
-      "@oblique/sort-import": 'error'
       accessor-pairs: off
       capitalized-comments: off
       class-methods-use-this: off #ideally, this rule should be limited to private methods
@@ -161,8 +161,10 @@ overrides:
       sort-imports:
         - error
         - ignoreDeclarationSort: true
+      "@Oblique/func-prefix-matching":
+        [ 1, { include: [], exclude: [] } ]
 
-      # rules that need some refactoring to be enabled
+    # rules that need some refactoring to be enabled
       "@typescript-eslint/no-explicit-any": off
       "@typescript-eslint/explicit-module-boundary-types": off
       "@typescript-eslint/no-unsafe-member-access": off
@@ -171,6 +173,7 @@ overrides:
       "@typescript-eslint/no-unnecessary-condition": off
       "@typescript-eslint/no-unsafe-argument": off
       "@typescript-eslint/no-magic-numbers": off
+      "@typescript-eslint/no-misused-promises": off # this rule had an error with the update to eslint 8.25.0
       "@typescript-eslint/no-unsafe-call": off
       "@typescript-eslint/naming-convention": off
       max-params: off

@@ -9,7 +9,9 @@
 
 # Node
 /node_modules
-/obliqueEslint/node_modules
+/packages/eslint/node_modules
+/packages/obliqueEslint/node_modules
+/eslint/node_modules
 npm-debug.log
 yarn-error.log
 
